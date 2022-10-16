@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+go run ./dnscrypt-proxy -config ./dnscrypt-proxy/example-dnscrypt-proxy.toml

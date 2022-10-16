@@ -40,5 +40,5 @@ localhost                ::1
 # Entries with wild cards will not have PTR records created, but multiple 
 # names for the same IP are supported 
 
-# example.com           192.168.100.1
+example.com           192.168.100.1
 # my.example.com        192.168.100.1

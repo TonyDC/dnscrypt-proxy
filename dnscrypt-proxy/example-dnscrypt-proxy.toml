@@ -39,7 +39,7 @@
 ## To listen to all IPv4 addresses, use `listen_addresses = ['0.0.0.0:53']`
 ## To listen to all IPv4+IPv6 addresses, use `listen_addresses = ['[::]:53']`
 
-listen_addresses = ['127.0.0.1:53']
+listen_addresses = ['127.0.0.1:8053']
 
 
 ## Maximum number of simultaneous client connections to accept
@@ -364,7 +364,7 @@ reject_ttl = 10
 ##
 ## See the `example-cloaking-rules.txt` file for an example
 
-# cloaking_rules = 'cloaking-rules.txt'
+cloaking_rules = 'example-cloaking-rules.txt'
 
 ## TTL used when serving entries in cloaking-rules.txt
 
@@ -464,7 +464,7 @@ cache_neg_max_ttl = 600
 ## Path to the query log file (absolute, or relative to the same directory as the config file)
 ## Can be set to /dev/stdout in order to log to the standard output.
 
-# file = 'query.log'
+file = 'query.log'
 
 
 ## Query log format (currently supported: tsv and ltsv)

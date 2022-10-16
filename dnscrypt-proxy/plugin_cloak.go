@@ -136,8 +136,7 @@ func (plugin *PluginCloak) Reload() error {
 
 func (plugin *PluginCloak) Eval(pluginsState *PluginsState, msg *dns.Msg) error {
 	question := msg.Question[0]
-	if question.Qclass != dns.ClassINET ||
-		(question.Qtype != dns.TypeA && question.Qtype != dns.TypeAAAA && question.Qtype != dns.TypePTR) {
+	if question.Qclass != dns.ClassINET {
 		return nil
 	}
 	now := time.Now()
